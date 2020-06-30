@@ -13,13 +13,16 @@
   color: #236bd6;
   font-size: 8px;
   margin: 80px auto;
-  position: relative;
+  position: fixed;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
+  text-align: center;
+  left: 50%;
+  top: 35%;
 }
 .loader:before,
 .loader:after {

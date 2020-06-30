@@ -20,6 +20,6 @@ export class AppComponent implements OnInit {
     this.spinner.show();
     setTimeout(() => {
       this.showSpinner = true;
-    }, 3000);
+    }, 2000);
   }
 }
