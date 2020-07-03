@@ -1,0 +1,14 @@
+.bg-primary{
+    background-color: rgb(85, 196, 118) !important;
+}
+
+.navbar-transparent{
+    background-color: transparent !important;
+    box-shadow: none;
+    color: $white-color;
+    padding-top: 20px;
+}
+
+.navbar-transparent .switch-background {
+    display: none;
+}
