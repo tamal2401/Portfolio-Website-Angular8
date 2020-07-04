@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { NgxSpinnerService } from 'ngx-spinner';
 import * as AOS from 'aos';
 
@@ -12,7 +13,8 @@ export class AppComponent implements OnInit {
   showSpinner: boolean = false;
 
   constructor(
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
+    @Inject(DOCUMENT) private document: Document
   ) { }
 
   ngOnInit() {
@@ -22,4 +24,14 @@ export class AppComponent implements OnInit {
       this.showSpinner = true;
     }, 2000);
   }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (document.documentElement.scrollTop > 500) {
+      this.document.getElementsByClassName("navbar")[0].classList.remove('navbar-transparent');
+    }else if(document.documentElement.scrollTop < 500){
+      this.document.getElementsByClassName("navbar")[0].classList.add('navbar-transparent');
+    }
+  }
 }
+

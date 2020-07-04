@@ -1875,15 +1875,15 @@ body {
 }
 
 .bg-primary {
-  background-color: #00334D !important;
+  background-color: rgb(5, 86, 126) !important;
 }
 
 .bg-info {
-  background-color: #2CA8FF !important;
+  background-color: rgb(9, 83, 136) !important;
 }
 
 .bg-success {
-  background-color: #18ce0f !important;
+  background-color: #6eda4d !important;
 }
 
 .bg-danger {
