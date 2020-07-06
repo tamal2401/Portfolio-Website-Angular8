@@ -8,6 +8,7 @@ $(document).ready(function() {
   }); // initialize animate on scroll library
 });
 
+
 // Smooth scroll for links with hashes
 $('a.smooth-scroll')
 .click(function(event) {
