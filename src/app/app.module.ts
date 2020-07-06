@@ -16,6 +16,7 @@ import { HeaderComponent } from './profile/header/header.component';
 import { IntroComponent } from './profile/intro/intro.component';
 import { ProfileService } from './profile/profile.service';
 import { EducationComponent } from './profile/education/education.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EducationComponent } from './profile/education/education.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [NgxSpinnerService, ProfileService],
   bootstrap: [AppComponent]
